@@ -1,0 +1,290 @@
+@media all and (max-width: 999px){
+	nav{
+		width: 100%;
+	}
+	nav #navbar li{
+		width: 30%;
+	}
+	.account-box{
+		position: relative;
+		left: -90px;
+	}
+	.container{
+		width: 97% !important;
+	}
+	#right-content {
+		width: 310px !important
+	}
+	.navbar-toggle {
+	    display: block !important;
+    	position: absolute;
+    	float: right;
+    	right: 0px;
+	    border: 1px solid #fff;
+    	background-color: transparent;
+    	background-image: none;
+	    padding: 1px 9px !important;
+	    margin-top: 13px !important;
+	    z-index: 2;
+	}
+	.icon-bar {
+	    background-color: #fff;
+	    width: 30px !important;
+	    height: 3px !important;
+	    font-size: 1.5em;
+	    margin-bottom: 8px;
+	    margin-top: 8px;
+	}
+	.mycontainer .collapse{
+		display: none !important;
+	}.mycontainer .in{
+		display: block !important;
+	}
+	nav #navbar{
+		width: 100% !important;
+		float: none;
+		clear: both;
+		background-color: #204056;
+		position: relative;
+		left: -30px;
+	}
+	.navbar-collapse.in {
+    overflow-y: visible !important;
+	}
+	.scene-box {
+	    height: 180px;
+	}
+	#logo{
+		margin: 5px 0px 5px 10px;
+	}
+}
+@media all and (max-width: 989px){
+
+	.container{
+		width: calc(100% - 4%) !important;
+	}
+	#left-content{
+		width: 98% !important;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+	#right-content{
+		display: none;
+	}
+	#slider{
+		height: 560px;
+	}
+	.carousel {
+   		height: 490px;
+	}
+	.carousel-inner>.item>img {
+	    height: 490px;
+	    width: 100%;
+	}
+	.item-listview {
+	    width: 95%;
+	}
+	.movie-info, .series-info {
+    	width: 80%;
+	}
+}
+@media all and (max-width: 921px){
+	.movie-info, .series-info {
+    	width: 75%;
+	}
+}
+@media all and (max-width: 767px){
+	footer .left-links{
+    	width: 95%;
+	}
+	footer{
+		height: auto
+	}
+	label{
+		float: left;
+	}
+}
+@media all and (max-width: 725px){
+	.container{
+		width: calc(100% - 6%) !important;
+	}
+	.scene-box {
+	    height: 160px;
+	}
+}
+@media all and (max-width: 667px){
+	.movie-info, .series-info {
+    	width: 74%;
+	}
+	.actor-image {
+    	height: 350px;
+	}
+}
+@media all and (max-width: 656px){
+	#slider{
+		height: 420px;
+	}
+	.carousel{
+		height: 80%;
+	}
+	.carousel-inner {
+		height: 100% !important;
+	}
+	.carousel-inner>.item>img {
+		height: 350px !important;
+	}
+}
+@media all and (max-width: 640px){
+	.movie-info, .series-info {
+    	width: 73%;
+	}
+	.first-ul, .second-ul{
+		width: 100% !important;
+	}
+	.tab-content {
+	    height: 354px;
+	}
+	.tab-content .tab-pane {
+	    height: 440px;
+	}
+}
+@media all and (max-width: 632px){
+	.movie-info, .series-info {
+    	width: 72%;
+	}
+	.scene-box {
+	    height: calc(100% - 79%);
+   	}
+}
+@media all and (max-width: 592px){
+	.movie-info, .series-info {
+    	width: 71%;
+	}
+	.item-listview {
+		height: 195px;
+	}
+}
+@media all and (max-width: 586px){
+	.movie-info, .series-info {
+    	width: 70%;
+	}
+}
+@media all and (max-width: 571px){
+	.movie-poster, .series-poster {
+		width: 80%;
+		height: 450px;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.item-listview {
+	    width: 100%;
+	    height: 670px;
+	}
+	.movie-info, .series-info {
+    	width: 95%;
+    	margin-right: auto;
+    	margin-left: auto;
+    	float: none;
+	}
+	.sorter{
+    	width: calc(100% - 50%);
+	}
+}
+@media all and (max-width: 521px){
+	.account-box{
+		position: relative;
+		right: 65px;
+	}
+	.account-box li{
+		width: 30px;
+		height: 30px;
+		padding-left: 30px;
+		margin: 22px 20px 0px 5px;
+	}
+	.account-box li a span{
+		display: none;
+	}
+	nav #navbar li{
+		width: 100%;
+		border-bottom: 1px solid #fff;
+	}
+	nav #navbar .noborder{
+		border: none;
+	}
+	.navbar-collapse.in {
+    overflow-y: auto !important;
+	}
+	.cast-item, .episode-item {
+	    width: calc(100% - 30%);
+	    margin: 10px 10px 10px 15%;
+	}
+	.scene-box {
+	    width: calc(100% - 30%);
+	    height: 180px;
+	    margin: 10px 0px 10px 11%;
+	}
+	.post-info ul li:last-child {
+	    margin-top: 25px;
+	}
+}
+@media all and (max-width: 483px){
+
+	.container{
+		width: calc(100% - 8%) !important;
+	}
+	.sorter {
+    	width: calc(100% - 40%);
+	}
+	label{
+		width: 100%;
+	}
+	#day, #month, #year, #gender {
+    	width: 100%;
+    }
+    .actor-image {
+        height: calc(100% - 60%);
+	}
+}
+@media all and (max-width: 464px){
+	#footer-logo{
+		margin-top: 25px;
+	}
+}
+@media all and (max-width: 397px){
+	.sm-off{
+		display: block;
+	}
+	.sm-off-2{
+		display: none;
+	}
+	.scene-box {
+		width: calc(100% - 10%);
+	    height: 170px;
+	    margin: 10px 0px 10px 0px;
+	}
+	.cast-item, .episode-item {
+	    width: calc(100% - 10%);
+	    margin: 10px 10px 10px 5%;
+	}
+}
+@media all and (max-width: 368px){
+	.movie-poster, .series-poster {
+		width: 80%;
+		height: 55%;
+	}
+	.item-listview {
+	    min-height: 452px;
+	}
+}
+@media all and (max-width: 367px){
+	nav #navbar li{
+		width: 100%;
+		border-bottom: 1px solid #fff;
+	}
+	nav #navbar .noborder{
+		border: none;
+	}
+}
+

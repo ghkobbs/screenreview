@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SCREENREVIEW</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- header section -->
+	<div class="mycontainer">
+		<div id="outer-header" class="navbar-fixed-top">
+			<nav><!-- nav -->
+				<div class="navbar-header">
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		      	</div>
+		      	<div class="row">
+					<div class="col-md-12">
+						<div id="logo">
+		          			<a href="index.html?ref=logo" class="pos-relative" id="site-name"><img src="images/logo.png" alt="logo"></a>
+		          		</div>
+						<div>
+							<ul class="account-box">
+								<li class="signin sm-off-2"><a href="#" data-toggle="modal" data-target="#signin"><span>Sign in</span></a></li>
+								<li class="signup sm-off-2"><a href="#" data-toggle="modal" data-target="#signup"><span>Join</span></a></li>
+							</ul>
+							<ul class="navbar-collapse collapse" id="navbar">
+								<li class="noborder">
+									<div class="dropdown">
+										<button class="btn-nocolour dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    Pages
+										    <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li><a href="index.html">Home</a></li>
+										    <li><a href="moviepage.html">Movies</a></li>
+										    <li><a href="moviedetail.html">Movie Page</a></li>
+										    <li><a href="seriespage.html">Tv Shows</a></li>
+										    <li><a href="seriesdetail.html">Tv Show Page</a></li>
+										    <li><a href="news.html">News</a></li>
+										    <li><a href="newspost.html">News Article</a></li>
+										    <li><a href="people.html">Actors/Actresses</a></li>
+										    <li><a href="actordetail.html">Actor Details</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="index.html">Home</a></li>
+								<li class=""><a href="moviepage.html">Movies</a></li>
+								<li class="current"><a href="seriespage.html">Series</a></li>
+								<li class=""><a href="news.html">News</a></li>
+								<li class=""><a href="people.html">People</a></li>
+								<li class="sm-off"  data-toggle="modal" data-target="#signin"><a href="#">Sign in</a></li>
+								<li class="sm-off noborder" data-toggle="modal" data-target="#signup"><a href="#">Join</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav><!-- nav-->
+		</div>
+	</div>
+	<!-- header section -->
+
+	<!-- Container section-->
+	<div class="container">
+		<div class="row">
+			<div id="content-sec">
+				<!-- signin modal -->
+				<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="signInLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="signInLabel">Sign in</h4>
+					      </div>
+					     	<div class="modal-body">
+					        	<form class="form-horizontal">
+								  	<div class="form-group">
+									    <label for="signinemail" class="col-sm-2 control-label">Email</label>
+									    <div class="col-sm-10">
+									      <input type="email" class="form-control" id="signinemail" placeholder="Email">
+										</div>
+									</div>
+									<div class="form-group">
+									    <label for="signinpass" class="col-sm-2 control-label">Password</label>
+									    <div class="col-sm-10">
+									      <input type="password" class="form-control" id="signinpass" placeholder="Password">
+										</div>
+									</div>
+									<div class="form-group">
+									    <div class="col-sm-offset-2 col-sm-10">
+										      <div class="checkbox">
+											        <label>
+											          <input type="checkbox"> Remember me
+											        </label>
+										      </div>
+									    </div>
+									</div>
+								    <div class="modal-footer">
+								        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+								        <button type="submit" class="btn btn-colour">Sign in</button>
+								    </div>
+					      		</form>
+					    	</div>
+					  	</div>
+					</div>
+				</div>
+				<!-- singin modal -->
+
+				<!-- sign up modal -->
+				<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signUpLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="signUpLabel">Sign up</h4>
+					      </div>
+					     	<div class="modal-body">
+					        	<form class="form-horizontal">
+					        		<div class="form-group">
+									    <label for="name" class="col-sm-2 control-label">Full Name</label>
+									    <div class="col-sm-10">
+									      <input type="email" class="form-control" id="name" placeholder="Full Name">
+										</div>
+									</div>
+									<div class="form-group">
+									    <label for="username" class="col-sm-2 control-label">Username</label>
+									    <div class="col-sm-10">
+									      <input type="email" class="form-control" id="username" placeholder="Username">
+										</div>
+									</div>
+								  	<div class="form-group">
+									    <label for="signupemail" class="col-sm-2 control-label">Email</label>
+									    <div class="col-sm-10">
+									      <input type="email" class="form-control" id="signupemail" placeholder="Email">
+										</div>
+									</div>
+									<div class="form-group">
+									    <label for="signuppass" class="col-sm-2 control-label">Password</label>
+									    <div class="col-sm-10">
+									      <input type="password" class="form-control" id="signuppass" placeholder="Password">
+										</div>
+									</div>
+									<div class="form-group">
+									    <label for="gender" class="col-sm-2 control-label">Gender</label>
+									    <div class="col-sm-10">
+									      <select class="form-control" id="gender" name="gender">
+									      		<option>Gender</option>
+									      		<option>Male</option>
+									      		<option>Female</option>
+									      </select>
+										</div>
+									</div>
+									<div class="form-group">
+									    <label for="gender" class="col-sm-6 control-label">Date of Birth</label>
+									</div>
+									<div class="form-group">
+									    <label for="day" class="col-sm-2 control-label">Day</label>
+									    <div class="col-sm-10">
+									      <select class="form-control" id="day" name="day">
+									      		<option>Day</option>
+									      		<option>1</option>
+									      		<option>2</option>
+									      		<option>3</option>
+									      		<option>4</option>
+									      		<option>5</option>
+									      		<option>6</option>
+									      		<option>7</option>
+									      		<option>8</option>
+									      		<option>9</option>
+									      		<option>10</option>
+									      		<option>11</option>
+									      		<option>12</option>
+									      		<option>13</option>
+									      		<option>14</option>
+									      		<option>15</option>
+									      		<option>16</option>
+									      		<option>17</option>
+									      		<option>18</option>
+									      		<option>19</option>
+									      		<option>20</option>
+									      		<option>21</option>
+									      		<option>22</option>
+									      		<option>23</option>
+									      		<option>24</option>
+									      		<option>25</option>
+									      		<option>26</option>
+									      		<option>27</option>
+									      		<option>28</option>
+									      		<option>29</option>
+									      		<option>30</option>
+									      		<option>31</option>
+									      </select>
+									      <label for="month" class="col-sm-2 control-label">Month</label>
+									      <select class="form-control" id="month" name="month">
+									      		<option>Month</option>
+									      		<option>January</option>
+									      		<option>February</option>
+									      		<option>March</option>
+									      		<option>April</option>
+									      		<option>May</option>
+									      		<option>June</option>
+									      		<option>July</option>
+									      		<option>August</option>
+									      		<option>September</option>
+									      		<option>October</option>
+									      		<option>November</option>
+									      		<option>December</option>
+									      </select>
+									      <label for="year" class="col-sm-2 control-label">Year</label>
+									      <select class="form-control" id="year" name="year">
+									      		<option>Year</option>
+									      		<option>1990</option>
+									      		<option>1991</option>
+									      		<option>1992</option>
+									      		<option>1993</option>
+									      		<option>1994</option>
+									      		<option>1995</option>
+									      		<option>1996</option>
+									      		<option>1997</option>
+									      		<option>1998</option>
+									      </select>
+										</div>
+									</div>
+								    <div class="modal-footer">
+								        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+								        <button type="submit" class="btn btn-colour">Sign me up!</button>
+								    </div>
+					      		</form>
+					    	</div>
+					  	</div>
+					</div>
+				</div>
+				<!-- sign up modal -->
+
+				<!-- series trailer frame -->
+				<div class="modal fade trailer-frame" id="seriestrailer" tabindex="-1" role="dialog"><a href="javascript:;" onClick="startTrailer2('hide');"  class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+					<iframe src="https://www.youtube.com/embed/yu8eRaq1FUM?rel=0&wmode=Opaque&enablejsapi=1" allowfullscreen></iframe>
+				</div>
+				<!-- series trailer frame -->
+
+				<!-- left content -->
+				<div id="left-content">
+
+					<!-- category -->
+					<div class="category">
+						<div class="category-content">
+							<div class="item-listview noborder-2">
+								<div class="movie-poster">
+									<img src="images/posters/series/game-of-thrones/poster.jpg" alt="">
+									<a href="javascript:;" onClick="startTrailer2();" data-toggle="modal" data-target="#seriestrailer" class="btn btn-trailer">Watch Trailer</a>
+								</div>
+								<div class="movie-info">
+									<div class="title-release-date">
+										<h2><a href="seriespage.html">Game of Thrones</a></h2>
+										<div class="share-movie"><a href="#"><img src="images/share.png" alt=""></a></div>
+										<div class="clear"></div>
+									</div>
+									<div class="moviedetail-desc">
+										<p>Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.</p>
+
+										<p>Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.</p>
+
+										<p>Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.</p>
+									</div>
+									<div class="info-panel">
+										<ul class="first-ul">
+											<li class="main-header">Writer:</li>
+											<li class="sub"><a href="#">Jack Milner</a></li>
+											<li class="main-header">Stars:</li>
+											<li class="sub"><a href="#">Monica Ibasi</a>, <a href="#">Caleb Mason</a></li>
+											<li class="main-header">Seasons:</li>
+											<li class="sub"><a href="#">1</a>, <a href="#">2</a>, <a href="#">3</a>, <a href="#">4</a></li>
+											<li class="sub">
+												<img src="images/metacritic.png" alt=""> 
+												<em title="1"></em>
+												<em title="2"></em>
+												<em title="3"></em>
+												<em title="4" class="empty-star"></em>
+												<em title="5" class="empty-star"></em>
+											</li>
+											<li class="sub">
+											<img src="images/tmdb.png" alt=""> 
+												<em title="1"></em>
+												<em title="2"></em>
+												<em title="3"></em>
+												<em title="4" class="empty-star"></em>
+												<em title="5" class="empty-star"></em>
+											</li>
+										</ul>
+										<ul class="second-ul">
+											<li class="main-header">Release:</li>
+											<li class="sub">21st&nbsp;October,&nbsp;2016</li>
+											<li class="main-header">Views:</li>
+											<li class="sub">7</li>
+											<li class="main-header">Runtime:</li>
+											<li class="sub">45 min</li>
+											<li class="main-header">Country:</li>
+											<li class="sub">US</li>
+											<li class="main-header">Language:</li>
+											<li class="sub">En</li>
+										</ul>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="overview">
+									<!-- Nav tabs -->
+									<ul class="nav nav-tabs" role="tablist">
+									    <li role="presentation" class="active" ><a href="#cast" aria-controls="cast" role="tab" data-toggle="tab">Cast</a></li>
+									    <li role="presentation"><a href="#episode" aria-controls="episode" role="tab" data-toggle="tab">Episodes</a></li>
+									    <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments</a></li>
+									    <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Reviews</a></li>
+									    <li role="presentation"><a href="#pictures" aria-controls="pictures" role="tab" data-toggle="tab">Pictures</a></li>
+									</ul>
+
+									  <!-- Tab panes -->
+									<div class="tab-content">
+									    <div role="tabpanel" class="tab-pane active" id="cast">
+									    	<div>
+									    		<div class="cast-item">
+									    			<div class="portrait-small">
+									    				<img src="images/actors/image.jpg" alt="">
+									    			</div>
+									    			<a href="#">Monica Ibasi</a>
+									    			<p class="character-name">Sophie Gates</p>
+									    		</div>
+									    		<div class="cast-item">
+									    			<div class="portrait-small">
+									    				<img src="images/actors/image.jpg" alt="">
+									    			</div>
+									    			<a href="#">Monica Ibasi</a>
+									    			<p class="character-name">Sophie Gates</p>
+									    		</div>
+									    		<div class="cast-item">
+									    			<div class="portrait-small">
+									    				<img src="images/actors/image.jpg" alt="">
+									    			</div>
+									    			<a href="#">Monica Ibasi</a>
+									    			<p class="character-name">Sophie Gates</p>
+									    		</div>
+									    		<div class="cast-item">
+									    			<div class="portrait-small">
+									    				<img src="images/actors/image.jpg" alt="">
+									    			</div>
+									    			<a href="#">Monica Ibasi</a>
+									    			<p class="character-name">Sophie Gates</p>
+									    		</div>
+									    	</div>
+									    </div>
+									    <div role="tabpanel" class="tab-pane" id="episode">
+									    	<div class="episode-item">
+									    		<div class="episode-small">
+									    			<img src="images/episodes/image.jpg" alt="">
+									    		</div>
+									    		<p>Episode 1</p>
+									    		<p class="ep-title">Episode title</p>
+									    	</div>
+									    	<div class="episode-item">
+									    		<div class="episode-small">
+									    			<img src="images/episodes/image.jpg" alt="">
+									    		</div>
+									    		<p>Episode 2</p>
+									    		<p class="ep-title">Episode title</p>
+									    	</div>
+									    	<div class="episode-item">
+									    		<div class="episode-small">
+									    			<img src="images/episodes/image.jpg" alt="">
+									    		</div>
+									    		<p>Episode 3</p>
+									    		<p class="ep-title">Episode title</p>
+									    	</div>
+									    	<div class="episode-item">
+									    		<div class="episode-small">
+									    			<img src="images/episodes/image.jpg" alt="">
+									    		</div>
+									    		<p>Episode 4</p>
+									    		<p class="ep-title">Episode title</p>
+									    	</div>
+									    	<div class="episode-item">
+									    		<div class="episode-small">
+									    			<img src="images/episodes/image.jpg" alt="">
+									    		</div>
+									    		<p>Episode 5</p>
+									    		<p class="ep-title">Episode title</p>
+									    	</div>
+									    	<div class="episode-item">
+									    		<div class="episode-small">
+									    			<img src="images/episodes/image.jpg" alt="">
+									    		</div>
+									    		<p>Episode 6</p>
+									    		<p class="ep-title">Episode title</p>
+									    	</div>
+									    </div>
+									    <div role="tabpanel" class="tab-pane" id="comments">
+									    	<div class="cm-box">
+									    		<div class="cm-header">
+									    			<span class="cm-left">Leave a reply</span>
+									    		</div>
+									    		<div class="cm-post-box">
+									    			<div class="cm-user-pix">
+									    				<img src="images/comments/user.jpg" alt="">
+									    			</div>
+									    			<div class="cm-post-inputs">
+									    				<form method="POST" action="#">
+									    					<textarea class="cm-textarea" placeholder="Enter your comment here..."></textarea>
+									    					<div class="cm-post-inputs-group">
+										    					<input type="text" class="cm-inputs guests-inputs" placeholder="Name">
+										    					<input type="email" class="cm-inputs guests-inputs" placeholder="Email"><br class="guests-inputs"/>
+										    					<div class="checkbox">
+																    <label>
+																      <input type="checkbox" class="guestcheck"> Comment as guest
+																    </label>
+																 </div>
+															</div>
+									    					<input type="submit" class="cm-submit" value="Post">
+									    				</form>
+									    			</div>
+									    			<div class="clear"></div>
+									    		</div>
+									    		<div class="user-cm-box">
+									    			<div class="cm-header">
+									    				<span class="cm-left">Comments (5)</span>
+									    			</div>
+									    			<div class="user-cm-posts-box">
+										    			<div class="cm-user-pix">
+										    				<img src="images/comments/user.jpg" alt="">
+										    			</div>
+									    				<div class="user-cm-posts">
+									    					<div class="cm-user-info">
+									    						<span class="cm-user-name">
+									    							<span class="user-name">Peter Arthur</span><br />
+									    							<span class="user-post-time">
+									    								<strong>Posted on:&nbsp;</strong><em>25th&nbsp;July,&nbsp;2016</em>
+									    							</span>
+									    						</span>
+									    						<a href="#"><span class="cm-reply" title="reply"></span></a>
+									    						<div class="clear"></div>
+									    					</div>
+									    					<div class="user-cm">
+									    						Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.
+									    					</div>
+									    					<div class="user-cm-posts-footer">
+									    						<a href="#"><span class="glyphicon thumbs-down glyphicon-thumbs-down" aria-hidden="true"><em>0</em></span></a>
+									    						<a href="#"><span class="glyphicon thumbs-up glyphicon-thumbs-up" aria-hidden="true"><em>5</em></span></a>
+									    					</div>
+									    				</div>
+									    				<div class="clear"></div>
+									    			</div>
+									    			<div class="user-cm-posts-box cm-reply-2">
+										    			<div class="cm-user-pix">
+										    				<img src="images/comments/user.jpg" alt="">
+										    			</div>
+									    				<div class="user-cm-posts">
+									    					<div class="cm-user-info">
+									    						<span class="cm-user-name">
+									    							<span class="user-name">Peter Arthur</span><br />
+									    							<span class="user-post-time">
+									    								<strong>Posted on:&nbsp;</strong><em>25th&nbsp;July,&nbsp;2016</em>
+									    							</span>
+									    						</span>
+									    						<a href="#"><span class="cm-reply" title="reply"></span></a>
+									    						<div class="clear"></div>
+									    					</div>
+									    					<div class="user-cm">
+									    						Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.
+									    					</div>
+									    					<div class="user-cm-posts-footer">
+									    						<a href="#"><span class="glyphicon thumbs-down glyphicon-thumbs-down" aria-hidden="true"><em>0</em></span></a>
+									    						<a href="#"><span class="glyphicon thumbs-up glyphicon-thumbs-up" aria-hidden="true"><em>5</em></span></a>
+									    					</div>
+									    				</div>
+									    				<div class="clear"></div>
+									    			</div>
+									    			<div class="user-cm-posts-box cm-reply-3">
+										    			<div class="cm-user-pix">
+										    				<img src="images/comments/user.jpg" alt="">
+										    			</div>
+									    				<div class="user-cm-posts">
+									    					<div class="cm-user-info">
+									    						<span class="cm-user-name">
+									    							<span class="user-name">Peter Arthur</span><br />
+									    							<span class="user-post-time">
+									    								<strong>Posted on:&nbsp;</strong><em>25th&nbsp;July,&nbsp;2016</em>
+									    							</span>
+									    						</span>
+									    						<a href="#"><span class="cm-reply" title="reply"></span></a>
+									    						<div class="clear"></div>
+									    					</div>
+									    					<div class="user-cm">
+									    						Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.
+									    					</div>
+									    					<div class="user-cm-posts-footer">
+									    						<a href="#"><span class="glyphicon thumbs-down glyphicon-thumbs-down" aria-hidden="true"><em>0</em></span></a>
+									    						<a href="#"><span class="glyphicon thumbs-up glyphicon-thumbs-up" aria-hidden="true"><em>5</em></span></a>
+									    					</div>
+									    				</div>
+									    				<div class="clear"></div>
+									    			</div>
+									    			<div class="user-cm-posts-box">
+										    			<div class="cm-user-pix">
+										    				<img src="images/comments/user.jpg" alt="">
+										    			</div>
+									    				<div class="user-cm-posts">
+									    					<div class="cm-user-info">
+									    						<span class="cm-user-name">
+									    							<span class="user-name">Peter Arthur</span><br />
+									    							<span class="user-post-time">
+									    								<strong>Posted on:&nbsp;</strong><em>25th&nbsp;July,&nbsp;2016</em>
+									    							</span>
+									    						</span>
+									    						<a href="#"><span class="cm-reply" title="reply"></span></a>
+									    						<div class="clear"></div>
+									    					</div>
+									    					<div class="user-cm">
+									    						Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.
+									    					</div>
+									    					<div class="user-cm-posts-footer">
+									    						<a href="#"><span class="glyphicon thumbs-down glyphicon-thumbs-down" aria-hidden="true"><em>0</em></span></a>
+									    						<a href="#"><span class="glyphicon thumbs-up glyphicon-thumbs-up" aria-hidden="true"><em>5</em></span></a>
+									    					</div>
+									    				</div>
+									    				<div class="clear"></div>
+									    			</div>
+									    			<div class="clear"></div>
+									    		</div>
+									    	</div>
+									    	<div class="pager">
+												<ul>
+													<li><a href="#" class="prev"></a></li>
+													<li><a href="#" class="active">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+													<li><a href="#">6</a></li>
+													<li><a href="#">7</a></li>
+													<li><a href="#">8</a></li>
+													<li><a href="#">...</a></li>
+													<li><a href="#">51</a></li>
+								<li><a href="#" class="next"></a></li>
+												</ul>
+											</div>
+									    </div>
+									    <div role="tabpanel" class="tab-pane" id="review">
+									    	<div class="cm-box">
+									    		<div class="user-cm-box cm-up">
+									    			<div class="cm-header">
+									    				<span class="cm-left">Reviews (5)</span>
+									    			</div>
+									    			<div class="user-cm-posts-box">
+										    			<div class="cm-user-pix">
+										    				<img src="images/comments/user.jpg" alt="">
+										    			</div>
+									    				<div class="user-cm-posts">
+									    					<div class="cm-user-info">
+									    						<span class="cm-user-name">
+									    							<span class="user-name">Peter Arthur</span><br />
+									    							<span class="user-post-time">
+									    								<strong>Posted on:&nbsp;</strong><em>25th&nbsp;July,&nbsp;2016</em>
+									    							</span>
+									    						</span>
+									    						<div class="cm-review" title="rate">
+									    							<ul>
+										    							<li> 
+																			<a href="#"><em title="4" class="empty-star"></em></a>
+																			<a href="#"><em title="5" class="empty-star"></em></a>
+																			<a href="#"><em title="1"></em></a>
+																			<a href="#"><em title="2"></em></a>
+																			<a href="#"><em title="3"></em></a>
+																		</li>
+																	</ul>
+									    						</div>
+									    						<div class="clear"></div>
+									    					</div>
+									    					<div class="user-cm">
+									    						Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.
+									    					</div>
+									    					<div class="user-cm-posts-footer">
+									    						<a href="#"><span class="glyphicon thumbs-down glyphicon-thumbs-down" aria-hidden="true"><em>0</em></span></a>
+									    						<a href="#"><span class="glyphicon thumbs-up glyphicon-thumbs-up" aria-hidden="true"><em>5</em></span></a>
+									    					</div>
+									    				</div>
+									    				<div class="clear"></div>
+									    			</div>
+									    			<div class="user-cm-posts-box">
+										    			<div class="cm-user-pix">
+										    				<img src="images/comments/user.jpg" alt="">
+										    			</div>
+									    				<div class="user-cm-posts">
+									    					<div class="cm-user-info">
+									    						<span class="cm-user-name">
+									    							<span class="user-name">Peter Arthur</span><br />
+									    							<span class="user-post-time">
+									    								<strong>Posted on:&nbsp;</strong><em>25th&nbsp;July,&nbsp;2016</em>
+									    							</span>
+									    						</span>
+									    						<div class="cm-review" title="rate">
+									    							<ul>
+										    							<li> 
+																			<a href="#"><em title="4" class="empty-star"></em></a>
+																			<a href="#"><em title="5" class="empty-star"></em></a>
+																			<a href="#"><em title="1"></em></a>
+																			<a href="#"><em title="2"></em></a>
+																			<a href="#"><em title="3"></em></a>
+																		</li>
+																	</ul>
+									    						</div>
+									    						<div class="clear"></div>
+									    					</div>
+									    					<div class="user-cm">
+									    						Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.
+									    					</div>
+									    					<div class="user-cm-posts-footer">
+									    						<a href="#"><span class="glyphicon thumbs-down glyphicon-thumbs-down" aria-hidden="true"><em>0</em></span></a>
+									    						<a href="#"><span class="glyphicon thumbs-up glyphicon-thumbs-up" aria-hidden="true"><em>5</em></span></a>
+									    					</div>
+									    				</div>
+									    				<div class="clear"></div>
+									    			</div>
+									    			<div class="user-cm-posts-box">
+										    			<div class="cm-user-pix">
+										    				<img src="images/comments/user.jpg" alt="">
+										    			</div>
+									    				<div class="user-cm-posts">
+									    					<div class="cm-user-info">
+									    						<span class="cm-user-name">
+									    							<span class="user-name">Peter Arthur</span><br />
+									    							<span class="user-post-time">
+									    								<strong>Posted on:&nbsp;</strong><em>25th&nbsp;July,&nbsp;2016</em>
+									    							</span>
+									    						</span>
+									    						<div class="cm-review" title="rate">
+									    							<ul>
+										    							<li> 
+																			<a href="#"><em title="4" class="empty-star"></em></a>
+																			<a href="#"><em title="5" class="empty-star"></em></a>
+																			<a href="#"><em title="1"></em></a>
+																			<a href="#"><em title="2"></em></a>
+																			<a href="#"><em title="3"></em></a>
+																		</li>
+																	</ul>
+									    						</div>
+									    						<div class="clear"></div>
+									    					</div>
+									    					<div class="user-cm">
+									    						Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.
+									    					</div>
+									    					<div class="user-cm-posts-footer">
+									    						<a href="#"><span class="glyphicon thumbs-down glyphicon-thumbs-down" aria-hidden="true"><em>0</em></span></a>
+									    						<a href="#"><span class="glyphicon thumbs-up glyphicon-thumbs-up" aria-hidden="true"><em>5</em></span></a>
+									    					</div>
+									    				</div>
+									    				<div class="clear"></div>
+									    			</div>
+									    			<div class="user-cm-posts-box">
+										    			<div class="cm-user-pix">
+										    				<img src="images/comments/user.jpg" alt="">
+										    			</div>
+									    				<div class="user-cm-posts">
+									    					<div class="cm-user-info">
+									    						<span class="cm-user-name">
+									    							<span class="user-name">Peter Arthur</span><br />
+									    							<span class="user-post-time">
+									    								<strong>Posted on:&nbsp;</strong><em>25th&nbsp;July,&nbsp;2016</em>
+									    							</span>
+									    						</span>
+									    						<div class="cm-review" title="rate">
+									    							<ul>
+										    							<li> 
+																			<a href="#"><em title="4" class="empty-star"></em></a>
+																			<a href="#"><em title="5" class="empty-star"></em></a>
+																			<a href="#"><em title="1"></em></a>
+																			<a href="#"><em title="2"></em></a>
+																			<a href="#"><em title="3"></em></a>
+																		</li>
+																	</ul>
+									    						</div>
+									    						<div class="clear"></div>
+									    					</div>
+									    					<div class="user-cm">
+									    						Lorem ipsum dolor sit amet, vis cu adipisci pericula, ludus clita urbanitas an est, mei te laboramus honestatis. Eu usu labore persecuti, facer salutatus scribentur et mel, an ferri inani has. Stet adhuc scripserit vel at. Per cu propriae volutpat, has elitr soluta causae ne, ferri fabellas cum ne. Et usu praesent tractatos.
+									    					</div>
+									    					<div class="user-cm-posts-footer">
+									    						<a href="#"><span class="glyphicon thumbs-down glyphicon-thumbs-down" aria-hidden="true"><em>0</em></span></a>
+									    						<a href="#"><span class="glyphicon thumbs-up glyphicon-thumbs-up" aria-hidden="true"><em>5</em></span></a>
+									    					</div>
+									    				</div>
+									    				<div class="clear"></div>
+									    			</div>
+									    			<div class="clear"></div>
+									    		</div>
+									    	</div>
+									    	<div class="pager">
+												<ul>
+													<li><a href="#" class="prev"></a></li>
+													<li><a href="#" class="active">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+													<li><a href="#">6</a></li>
+													<li><a href="#">7</a></li>
+													<li><a href="#">8</a></li>
+													<li><a href="#">...</a></li>
+													<li><a href="#">51</a></li>
+													<li><a href="#" class="next"></a></li>
+												</ul>
+											</div>
+									    </div>
+									    <div role="tabpanel" class="tab-pane" id="pictures">
+									    	<div class="scene-box">
+									    		<img src="images/episodes/image.jpg" alt="">
+									    	</div>
+									    	<div class="scene-box">
+									    		<img src="images/episodes/image2.jpg" alt="">
+									    	</div>
+									    	<div class="scene-box">
+									    		<img src="images/episodes/image3.jpg" alt="">
+									    	</div>
+									    	<div class="scene-box">
+									    		<img src="images/episodes/image4.jpg" alt="">
+									    	</div>
+									    	<div class="scene-box">
+									    		<img src="images/episodes/image5.jpg" alt="">
+									    	</div>
+									    	<div class="scene-box">
+									    		<img src="images/episodes/image6.jpg" alt="">
+									    	</div>
+									    	<div class="scene-box">
+									    		<img src="images/episodes/image7.jpg" alt="">
+									    	</div>
+									    	<div class="scene-box">
+									    		<img src="images/episodes/image8.jpg" alt="">
+									    	</div>
+									    </div>
+									    <div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- category -->
+
+				</div>
+				<!-- left content -->
+
+				<!-- right content -->
+				<div id="right-content">
+					<div id="searchform">
+						<form method="GET" action="#">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="search">
+							</div>
+							<input type="button" class="btn-button" value="search">
+						</form>
+					</div>
+					<div class="advert">
+						<img src="images/ad-banner.jpg" alt="">
+					</div>
+					<div id="news">
+						<div class="news-header">
+							<h4>Top News</h4>
+						</div>
+						<div class="news-item-mini">
+							<div class="news-image-mini">
+									<img src="images/news/image.jpg" alt="">
+							</div>
+							<div class="news-info-mini">
+								<div class="news-title-mini">
+										<h3><a href="newspost.html">Michael Joins 'Bates Motel' in Peter Clark Role</a></h3>...
+										<div class="clear"></div>
+								</div>
+								<div class="news-content-mini">
+									 Vim no cibo nobis, scaevola oporteat mel ea. Cu ferri propriae vis scaevola oporteat.
+								</div>
+								<div class="author-date-mini">
+									<ul>
+										<li><strong>Isaac Morrison</strong></li>
+										<li><strong>22min ago</strong>
+											<div class="clear"></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="news-item-mini">
+							<div class="news-image-mini">
+									<img src="images/news/image.jpg" alt="">
+							</div>
+							<div class="news-info-mini">
+								<div class="news-title-mini">
+										<h3><a href="newspost.html">Michael Joins 'Bates Motel' in Peter Clark Role</a></h3>...
+										<div class="clear"></div>
+								</div>
+								<div class="news-content-mini">
+									 Vim no cibo nobis, scaevola oporteat mel ea. Cu ferri propriae vis scaevola oporteat.
+								</div>
+								<div class="author-date-mini">
+									<ul>
+										<li><strong>Isaac Morrison</strong></li>
+										<li><strong>22min ago</strong>
+											<div class="clear"></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="news-item-mini">
+							<div class="news-image-mini">
+									<img src="images/news/image.jpg" alt="">
+							</div>
+							<div class="news-info-mini">
+								<div class="news-title-mini">
+										<h3><a href="newspost.html">Michael Joins 'Bates Motel' in Peter Clark Role</a></h3>...
+										<div class="clear"></div>
+								</div>
+								<div class="news-content-mini">
+									 Vim no cibo nobis, scaevola oporteat mel ea. Cu ferri propriae vis scaevola oporteat.
+								</div>
+								<div class="author-date-mini">
+									<ul>
+										<li><strong>Isaac Morrison</strong></li>
+										<li><strong>22min ago</strong>
+											<div class="clear"></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="news-item-mini">
+							<div class="news-image-mini">
+									<img src="images/news/image.jpg" alt="">
+							</div>
+							<div class="news-info-mini">
+								<div class="news-title-mini">
+										<h3><a href="newspost.html">Michael Joins 'Bates Motel' in Peter Clark Role</a></h3>...
+										<div class="clear"></div>
+								</div>
+								<div class="news-content-mini">
+									 Vim no cibo nobis, scaevola oporteat mel ea. Cu ferri propriae vis scaevola oporteat.
+								</div>
+								<div class="author-date-mini">
+									<ul>
+										<li><strong>Isaac Morrison</strong></li>
+										<li><strong>22min ago</strong>
+											<div class="clear"></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="advert">
+						<img src="images/ad-banner.jpg" alt="">
+					</div>
+					<div id="genre">
+						<div class="news-header">
+							<h4>Genres</h4>
+						</div>
+						<ul>
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Adventure</a></li>
+							<li><a href="#">Animation</a></li>
+							<li><a href="#">Biography</a></li>
+							<li><a href="#">Comedy</a></li>
+							<li><a href="#">Crime</a></li>
+							<li><a href="#">Documentary</a></li>
+							<li><a href="#">Drama</a></li>
+							<li><a href="#">Family</a></li>
+							<li><a href="#">Fantasy</a></li>
+							<li><a href="#">History</a></li>
+							<li><a href="#">Horror</a></li>
+							<li><a href="#">Music</a></li>
+							<li><a href="#">Musical</a></li>
+							<li><a href="#">Mystery</a></li>
+							<li><a href="#">Romance</a></li>
+							<li><a href="#">Sci-Fi</a></li>
+							<li><a href="#">Thriller</a></li>
+							<li><a href="#">War</a></li>
+							<li><a href="#">Western</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- right content -->
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<!-- container -->
+
+	<!-- footer -->
+	<footer>
+		<ul class="left-links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="moviepage.html">Movies</a></li>
+			<li><a href="seriespage.html">Series</a></li>
+			<li><a href="people.html">People</a></li>
+			<li><a href="#">Help</a></li>
+			<li><a href="#">Terms</a></li>
+			<li><a href="#">Advertise</a></li>
+		</ul>
+		<ul class="social">
+			<li><a href="#" class="facebook"></a></li>
+			<li><a href="#" class="twitter"></a></li>
+			<li><a href="#" class="gplus"></a></li>
+			<li><a href="#" class="rss"></a></li>
+		</ul>
+		<div class="logo-copy">
+			<div id="footer-logo">
+				<img src="images/footer-logo.png" alt="">
+			</div>
+			<div id="copy">
+				&nbsp; &copy; 2016 ScreenReview | All right reserved.
+			</div>
+		</div>
+		<div class="clear"></div>
+	</footer>
+	<!-- footer -->
+	
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

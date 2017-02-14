@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+.spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+.double-bounce1, .double-bounce2 {
+    background-image: url("../images/app-name.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 0px auto;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    -webkit-animation: bounce 2.0s infinite ease-in;
+    animation: bounce 2.0s infinite ease-out;
+}
+.double-bounce2 {
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+@-webkit-keyframes bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+@media all and (max-width: 1024px){
+    .double-bounce1, .double-bounce2 {
+    top: 40%;
+    left: 40%;
+}
+
+}
+@media all and (max-width: 600px){
+    .double-bounce1, .double-bounce2 {
+    top: 38%;
+    left: 32%;
+}
+@media all and (max-width: 380px){
+    .double-bounce1, .double-bounce2 {
+    top: 35%;
+    left: 26%;
+}
